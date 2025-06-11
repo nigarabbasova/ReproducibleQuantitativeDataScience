@@ -19,7 +19,7 @@ The course structure is over 5 days plus personal work: 2 days, course work, 2 d
 ### Day 2 - Reproducible designs, protocols and pre-registration
 
 - [Concepts and tools for protocol documentation, and study pre-registration](https://github.com/CPernet/ReproducibleQuantitativeDataScience/blob/main/lecture_slides/1.05_Concepts%26Tools_doc%26preregistration.pdf) (CP)
-- [Ethic and GDPR](https://github.com/CPernet/ReproducibleQuantitativeDataScience/blob/main/lecture_slides/1.06_Ethic%26GDPR.pdf) - lecture and practical case reviews (CP & RO)
+- [Data Privacy, Ethic and GDPR](https://github.com/CPernet/ReproducibleQuantitativeDataScience/blob/main/lecture_slides/1.06_Ethic%26GDPR.pdf) - lecture and practical case reviews (CP & RO)
 - [Using markdown](https://github.com/CPernet/ReproducibleQuantitativeDataScience/blob/main/lecture_slides/1.07_Using_markdown_for_documentation.pdf) see [cheat sheet](https://www.markdownguide.org/cheat-sheet/) for documentation - practical (MG)
 - [Version control and social coding with Git](https://github.com/CPernet/ReproducibleQuantitativeDataScience/blob/main/lecture_slides/1.08_VersionControl_Mkd_SocialCoding.pdf) see the [quick sheet](https://github.com/CPernet/Quicksheets/blob/main/git_github/git.mkd) and GitHub - practical, split into novice/advanced groups (all) 
 
