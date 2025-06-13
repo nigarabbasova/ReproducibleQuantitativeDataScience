@@ -1,52 +1,72 @@
-# Git workshop exercises
+# Step 1
 
-All workshop participants are split into multiple groups. Please identify your group members...
-
-# Instruction to get started with Git and GitHub
-
-1 - Get a decent editor [Visual Studio](https://code.visualstudio.com/) is recommended, [Notepad++](https://notepad-plus-plus.org/downloads/) if you want to go really light)  
-2 - Go to GitHub and open an account (which you may have if you read this online)  
-3 - Windows and Mac users, download and install [GitHub desktop](https://desktop.github.com/)  (GUI to manage repositories, it really is easier)  
-  
-Note: a little knowledge of [bash](https://github.com/CPernet/Quicksheets/blob/main/bash/bash.mkd) goes a long way when using the Git command line.  
-
-Warning: (1) make sure you log in from your editor to Github allowing easy push/pull/clone to/from the web; (2) make sure any folder you work one is not protected or ensure the software is allowed to write (e.g. exclude a folder in F-secure, allow VS code, etc).
-
-## Link things together
-
-Open a terminal (from VS code via the terminal menu, get [Git Bash](https://gitforwindows.org/) on Windows, any terminal otherwise)  
- 
-```
-git config --global user.nane "GitHubUserName"   
+```bash
+git config --global user.name "GitHubUserName"   
 git config --global user.email "YourEmail"
 ```
 
-# Exercise 1
+# Step 2
 
-clone this repository! 
+```bash
+cd /path/to/your/desired/location
+mkdir my-new-repo
+cd my-new-repo
+git init
+ls -la
+cd .git
+ls -la
+cd ..
+```
 
-# Exercise 2
+# Step 3
 
-We have a separate directory for each group.
+cut/paste MyFirstMarkdownFile.md into your new folder
 
-Please write a markdown file with short **introduction** about yourself. For example, what food do you like.
+```bash
+git status
+git add .
+git commit -m "my fist commit"
+Change something in your markdown
+git log --oneline
+git restore MyFirstMarkdownFile.md
+```
 
-Save it with your name or your pseudonym like `yourname.md`, and add it to the directory that corresponds to your group.
+# Step 4
 
-Pull, Commit, Push and Pull to add your introduction - and also to get the introductions of the others.
+Create a file 
+```bash
+touch tmpinfo.txt
+```
 
-#  Exercise 3
+Create a folder and file notes/notes.md
+```bash
+mkdir notes
+cd notes
+touch notes.md
+cd ..
+```
 
-In each group directory there is a `README.md` file in which we want to collect **recommendations of movies and/or TV shows**.
+Now create a .gitignore file, and let's edit it as to ignore what we want to ignore (use wild card for folder contend)
+```bash
+touch .gitignore
+echo "tmpinfo.txt" >> .gitignore
+echo "notes/*" >> .gitignore
+```
 
-Pull the latest changes to your local repository, edit the README and add your recommendation.
+# Step 5
 
-Commit and push...
+Fork the course repository to your own GitHub account, then using GitHub Desktop, clone your forked repository to your local machine.
+Overwrite the MyFirstMarkdownFile.md file from the course repository with your own version.
 
-As you are all doing this at (more or less) the same time, it is very likely that there will be merge conflicts and that chaos will ensue... breathe in and breathe out, and let's try to work these out together. Collaborating and social coding is not only about jointly contributing to a repository, but also on making agreements on the workflow. Who does what, in what order, and who takes responsibility.
+```bash
+cd folder/where/you/cloned/your/repo
+git status
+git add .
+git commit -m "Overwrite MyFirstMarkdownFile.md with my own version"
+git push 
+```
 
-#  Exercise 4
+# Step 6
 
-Create an [issue](https://github.com/Donders-Institute/git-workshop/issues) for one of your group members, for example ask them to add or modify a file. Assign a label to the issue and assign it to the group member that should resolve it.
-
-**Working together** while not sitting next to each other (and possibly in different time zones) requires good communication. You can discuss the issue online: every comment that is added to the issue will result in an email. Other repository (aka team) members can also read along.
+Now you'll do a pull request to the course repository.
+Go to the repository on GitHub, and click on the "Pull requests" tab. Click on "New pull request". Select the course and the forked repositories. Add a title and description, then click "Create pull request".
