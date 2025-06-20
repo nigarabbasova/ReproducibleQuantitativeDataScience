@@ -1,15 +1,13 @@
-﻿
+﻿# Reproducible Quantitative Data Science 
+## Markdown Exercise {##my-subtitle}
+I am writing some **bold** words, as well some _italic_ words, and a _**combination**_ of both!
 
-# Reproducible Quantitative Data Science
+This is the [GitHub](https://github.com/melanieganz/ReproducibleQuantitativeDataAnalysis-2025) main page.
+[This links](##my-subtitle) to the subtitle!
 
-## Markdown exercise {#my-subtitle}
-**Let’s _write_ some markdown text** _together_ here!  
+This is a logo we fetched from Github:
+![logo](https://github.com/melanieganz/ReproducibleQuantitativeDataAnalysis-2025/blob/main/markdown/Markdown-mark.jpg?raw=true)
+###It's me!
+* Nigar, PhD fellow @ Niels Bohr Institute 
 
-[This is the Gitub main page](https://github.com/)
-[This links to the subtitle](#my-subtitle)
-  
-This is a logo we fetched from GitHub![Let's display the markdown logo](https://raw.githubusercontent.com/CPernet/ReproducibleQuantitativeDataScience/main/markdown/Markdown-mark.jpg)
 
-### It's Me
-* Cyril, NeuroImaging, stats, Data Science
-* Melanie, NeuroImaging, Machine Learning, Data Science
